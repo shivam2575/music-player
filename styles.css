@@ -19,6 +19,9 @@ body{
 .mb{
     margin-bottom: 2px;
 }
+.col-white{
+    color: white;
+}
 
 /* =============================MAIN SECTION=============================== */
 main{
@@ -29,37 +32,77 @@ main{
 /* --------------Header section---------------- */
 
 /* navbar*/
-nav{
+header{
     display: flex;
     height: 10vh;
     justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
 }
 
-#logo-container a{
-    display: inline-block;
-    height: inherit; 
-    vertical-align: middle;
+#logo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:25%;
 }
 
-#logo-container a img{
-    height: inherit;
-    width: 10rem;
+#logo-container img{
+    height: 61px;
+    width: auto;
+    border-radius: 2.5rem;
+    margin-right: 1rem;
+    max-height: 6rem;
+    max-width: 18rem;
+}
+
+#logo-container p>a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
 #nav-menu{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
 }
 
-#nav-menu a{
-    display: inline-block;
-    height: inherit; 
-    vertical-align: middle;
+.search-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #12183F;
+    width: 50%;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.search-box i,input{
+    background-color: transparent;
+}
+
+.search-box input{
+    border: 0;
+    padding: 0.2rem;
+    margin-left: 0.3rem;
+    margin-left: 0.3rem;
+    height: 1.1rem;
+    width: 80%;
+    line-height: 1;
+    font-weight: 900;
+}
+
+.search-box input:focus{
+    outline: none;
 }
 
 #profile-pic{
     border-radius: 50%;
     height: 100%;
+    width: 3rem;
 }
 
 /* --------------carasoul section---------------- */
