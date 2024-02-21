@@ -1,6 +1,7 @@
 /* --------------General----------------------- */
 html{
     background-color: hsl(229.29deg 56% 9.8%);
+    font-family: "Helvetica Neue", sans-serif;
 }
 body{
     width: 90%;
@@ -106,6 +107,42 @@ header{
 }
 
 /* --------------carasoul section---------------- */
+#carasoule{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+/* for carasoule 3d-effect */
+#slider{
+    float: right;
+    display: flex;
+    perspective: 1400px;
+    transform-style: preserve-3d;
+    height: 35vh;
+    min-width: 60%;
+    margin: 0px 150px;
+}
+
+#slider label, #slider label img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carasoule input{
+    display: none;
+}
+
 
 
 /* =============================ASIDE SECTION=============================== */
