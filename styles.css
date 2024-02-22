@@ -137,11 +137,52 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 400ms ease;
 }
 
-#carasoule input{
+#slider input[type=radio]{
+    position: relative;
+    top: 100%;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    margin: 0px 15px 0px 0px;
+    opacity: 0.4;
+    transform: translateX(-83px);
+    cursor: pointer;
     display: none;
 }
+
+#slider input[type=radio]:nth-child(3){
+    margin-right: 0px;
+}
+
+#slider input[type=radio]:checked{
+    opacity: 1;
+}
+
+#s1:checked ~ #slide-1,
+#s2:checked ~ #slide-2,
+#s3:checked ~ #slide-3{
+    box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2);
+    transform: translate3d(0%, 0, 0px);
+}
+
+#s1:checked ~ #slide-2,
+#s2:checked ~ #slide-3,
+#s3:checked ~ #slide-1{
+    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2);
+    transform: translate3d(20%, 0, 50px);
+}
+
+#s1:checked ~ #slide-3,
+#s2:checked ~ #slide-1,
+#s3:checked ~ #slide-2{
+    box-shadow: 0 1px 4px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2);
+    transform: translate3d(-20%, 0, -50px);
+}
+
+
 
 
 
