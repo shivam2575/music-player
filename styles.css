@@ -23,6 +23,9 @@ body{
 .col-white{
     color: white;
 }
+.full-width{
+    width: 100%;
+}
 
 /* =============================MAIN SECTION=============================== */
 main{
@@ -112,21 +115,13 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
 }
 
 /* for carasoule 3d-effect */
 #slider{
-    /* float: right;
-    display: flex;
-    perspective: 1400px;
-    transform-style: preserve-3d;
-    height: 35vh;
-    min-width: 60%;
-    margin: 0px 150px; */
     position: relative;
     width: 50%;
-    height: 24vw;
+    height: 23vw;
     margin: 30px auto;
     perspective: 1400px;
     transform-style: preserve-3d;
@@ -157,7 +152,7 @@ header{
     position: absolute;
     left: 0;
     top: 0;
-    height: 100%;
+    height: 95%;
     width: 100%;
     border-radius: 3px;
     cursor: pointer;
@@ -192,25 +187,79 @@ header{
 /* --------------latest release section---------------- */
 #latest-release-container{
     display: flex;
-    flex-direction: column;
-    padding: 1rem;
-}
-
-.latest-row{
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .latest-col{
-    height: 8.2rem;
-    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 6rem;
+    width: 38%;
+    margin: 3px 5px;
+    margin-top: 0;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
 }
 
 .lr-img{
-    width: 30%;
+    position: relative;
+    height: 6rem;
+    width: 6rem;
     background-image: url(images/latest_release/latest-release-onism.jpg);
     background-size: cover;
+    margin-right: 1rem;
+}
+
+.song-name{
+    color: #FCFCFD;
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+.song-date{
+    color: #E2E3E5;
+    font-size: 0.7rem;
+}
+
+.more-details-container{
+    align-self: baseline;
+    margin: 0 auto !important;
+    margin-right: 0 !important;
+}
+
+.more-details {
+    color: #93A9B2;
+    font-size: 0.8rem;
+}
+
+.time {
+    color: #8D8C93;
+    font-size: 0.6rem;
+}
+
+.latest-release-play-btn {
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    color: white;
+    top: 3rem;
+    left: 3rem;
+}
+
+.latest-release-pause-btn {
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    color: white;
+    top: 2rem;
+    left: 2rem;
+}
+
+.lr-img:hover .latest-release-play-btn{
+    height: 1rem;
+    cursor: pointer;
 }
 
 
