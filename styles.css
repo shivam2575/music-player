@@ -27,6 +27,7 @@ body{
     width: 100%;
 }
 
+
 /* =============================MAIN SECTION=============================== */
 main{
     display: inline-block;
@@ -262,10 +263,186 @@ header{
     cursor: pointer;
 }
 
+/* --------------Popular-Artist section---------------- */
+#popular-artist-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#popular-artist-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.7rem;
+}
+
+.pa-img-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    width: 15%;
+    height: 11rem;
+    cursor: pointer;
+}
+
+.pa-img-container p{
+    font-size: 0.8rem;
+}
+
+.pa-img{
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.pa-img>a{
+    position: relative;
+    top: 50%;
+    height: 0;
+    display: none;
+    overflow: hidden;
+    color: white;
+}
+
+.pa-img>a>i{
+    color: white;
+}
+
+.pa-img:hover>a {
+    height: 4rem;
+    display: inline;
+}
+
+.pa-img:hover {
+    opacity: 0.7;
+    color: white;
+}
+
+#pa-img-1{
+    background-image: url(images/popular_artist/bruno-mars.jpg);
+}
+#pa-img-2{
+    background-image: url(images/popular_artist/charlie-puth.jpg);
+}
+#pa-img-3{
+    background-image: url(images/popular_artist/cold-play.jpg);
+}
+#pa-img-4{
+    background-image: url(images/popular_artist/ed-sheeran.jpg);
+}
+#pa-img-5{
+    background-image: url(images/popular_artist/imagine-dragon.jpg);
+}
+#pa-img-6{
+    background-image: url(images/popular_artist/zayn.jpg);
+}
 
 
+/* --------------Gener section---------------- */
+#gener-container{
+    display: flex;
+    flex-direction: column;
+}
 
+/* #gener-container img{
+    height: 7rem;
+    width: 7rem;
+} */
 
+#gener-container-1, #gener-container-2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+}
+
+#gener-container-1{
+    background-color: #12183F;
+    height: 8rem;
+    align-items: center;
+}
+
+#gc-2{
+    background-image: url(images/gener/chill.jpg);
+}
+#gc-3{
+    background-image: url(images/gener/love.jpg);
+}
+#gc-4{
+    background-image: url(images/gener/workout.jpg);
+}
+#gc-5{
+    background-image: url(images/gener/pop.jpg);
+}
+#gc-6{
+    background-image: url(images/gener/retro.png);
+}
+#gc-7{
+    background-image: url(images/gener/rock.jpg);
+}
+
+#gener-container-1 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 10%;
+    height: 75%;
+    background-size: cover;
+    background-position: center;
+}
+
+.station-para{
+    font-size: 0.9rem;
+    font-weight: bold;
+    backdrop-filter: blur(1.1px);
+    color: white;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#gc-1{
+    background-image: url(images/gener/stations-img.png);
+    border-radius: 0% !important;
+    width: 20% !important;
+    height: 90% !important;
+}
+
+.ge-img{
+    display: flex;
+    background-image: url(images/gener/party.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    width: 30%;
+    height: 9rem;
+    transition: all 0.4s ease-in-out;
+    justify-content: center;
+    align-items: center;
+}
+
+.ge-img:hover{
+    background-size: 120% 120%;
+}
+
+#gener-img-2{
+    background-image: url(images/gener/electronic.jpg);
+}
+
+#gener-img-3{
+    background-image: url(images/gener/road-trip.jpg);
+}
+
+.ge-img p{
+    font-size: 1.3rem;
+}
 
 
 /* =============================ASIDE SECTION=============================== */
