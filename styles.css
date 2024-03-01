@@ -488,7 +488,7 @@ footer{
     z-index: 4;
     display: flex;
     justify-content: space-around;
-    background-color: #454545;
+    background-color: hsl(0deg 0% 15.69%);
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
 }
@@ -526,14 +526,51 @@ footer{
 }
 
 #footer-player-icon{
-    margin-left: 2px;
+    margin-left: 5%;
     display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer-player-icon>span{
+    margin-left: 20%;
 }
 
 .subtitle{
     color: #C0C0C0;
+}
+
+#footer-box-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+#fb-2-icon{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+#fb-2-player{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#fb-2-player>input{
+    width: 75%;
+}
+
+#fb-2-player>span{
+    font-size: smaller;
+}
+
+#footer-box-3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
 }
 
 
