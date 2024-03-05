@@ -7,6 +7,7 @@ body{
     width: 90%;
     margin: auto;
     color: white;
+    padding-bottom: 75px;
 }
 .border{
     border: 1px solid white;
@@ -28,6 +29,12 @@ body{
 }
 .col-text{
     color: #767B90;
+}
+.mt-2{
+    margin-top: 2px;
+}
+.mb-2{
+    margin-bottom: 2px;
 }
 
 /* --------------------Header Section----------------------- */
@@ -237,7 +244,7 @@ aside{
     display: inline-block;
     width: 23%;
     vertical-align: top;
-    height: 5vh;
+    /* height: 5vh; */
     margin: 1%;
 }
 
@@ -245,7 +252,6 @@ aside{
     display: flex;
     flex-direction: column;
 }
-
 .aside-header-container{
     display: flex;
     justify-content: space-between;
@@ -256,10 +262,21 @@ aside{
     text-decoration: none;
 }
 
+
+/* --------------------similar-artist Section----------------------- */
+
+#sim-playlist-container{
+    height: 40%;
+}
+
 .sim-artist{
     display: flex;
     justify-content: space-between;
     margin-bottom: 3%;
+}
+
+.sim-artist:hover{
+    cursor: pointer;
 }
 
 .sim-img-container img{
@@ -282,4 +299,107 @@ aside{
     flex-direction: column;
     align-items: flex-end;
     justify-content: baseline;
+}
+
+/* --------------------recent playlist Section----------------------- */
+#rec-playlist-container div{
+    background-color: transparent;
+    font-size: small;
+}
+
+
+
+/* --------------Sticky player section---------------- */
+footer{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 75px;
+    /* z-index: 4; */
+    display: flex;
+    justify-content: space-around;
+    background-color: hsl(0deg 0% 15.69%);
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+#footer-box-1{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+}
+
+#footer-thumbnail-container{
+    height: 4rem;
+    width: 4rem;
+    background: url(images/queue/peaches.jpg) center no-repeat;
+    background-size: contain;
+    margin: 1vh;
+}
+
+#footer-song-name{
+    display: flex;
+    flex-direction: column;
+    height: 6vh;
+    width: 50%;
+    text-overflow: hidden;
+    max-width: 70%;
+    justify-content: center;
+}
+
+.footer-song-name{
+    margin-top: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#footer-player-icon{
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer-player-icon>span{
+    margin-left: 20%;
+}
+
+.subtitle{
+    color: #C0C0C0;
+}
+
+#footer-box-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+#fb-2-icon{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+#fb-2-player{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#fb-2-player>input{
+    width: 75%;
+}
+
+#fb-2-player>span{
+    font-size: smaller;
+}
+
+#footer-box-3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
 }
