@@ -215,7 +215,7 @@ header{
     position: relative;
     height: 6rem;
     width: 6rem;
-    background-image: url(images/latest_release/latest-release-onism.jpg);
+    background-image: url(assets/latest_release/latest-release-onism.jpg);
     background-size: cover;
     margin-right: 1rem;
 }
@@ -385,22 +385,22 @@ header{
 }
 
 #pa-img-1{
-    background-image: url(images/popular_artist/bruno-mars.jpg);
+    background-image: url(assets/popular_artist/bruno-mars.jpg);
 }
 #pa-img-2{
-    background-image: url(images/popular_artist/charlie-puth.jpg);
+    background-image: url(assets/popular_artist/charlie-puth.jpg);
 }
 #pa-img-3{
-    background-image: url(images/popular_artist/cold-play.jpg);
+    background-image: url(assets/popular_artist/cold-play.jpg);
 }
 #pa-img-4{
-    background-image: url(images/popular_artist/ed-sheeran.jpg);
+    background-image: url(assets/popular_artist/ed-sheeran.jpg);
 }
 #pa-img-5{
-    background-image: url(images/popular_artist/imagine-dragon.jpg);
+    background-image: url(assets/popular_artist/imagine-dragon.jpg);
 }
 #pa-img-6{
-    background-image: url(images/popular_artist/zayn.jpg);
+    background-image: url(assets/popular_artist/zayn.jpg);
 }
 
 
@@ -430,22 +430,22 @@ header{
 }
 
 #gc-2{
-    background-image: url(images/gener/chill.jpg);
+    background-image: url(assets/gener/chill.jpg);
 }
 #gc-3{
-    background-image: url(images/gener/love.jpg);
+    background-image: url(assets/gener/love.jpg);
 }
 #gc-4{
-    background-image: url(images/gener/workout.jpg);
+    background-image: url(assets/gener/workout.jpg);
 }
 #gc-5{
-    background-image: url(images/gener/pop.jpg);
+    background-image: url(assets/gener/pop.jpg);
 }
 #gc-6{
-    background-image: url(images/gener/retro.png);
+    background-image: url(assets/gener/retro.png);
 }
 #gc-7{
-    background-image: url(images/gener/rock.jpg);
+    background-image: url(assets/gener/rock.jpg);
 }
 
 #gener-container-1>div{
@@ -470,7 +470,7 @@ header{
 }
 
 #gc-1{
-    background-image: url(images/gener/stations-img.png);
+    background-image: url(assets/gener/stations-img.png);
     border-radius: 0% !important;
     width: 20% !important;
     height: 90% !important;
@@ -480,7 +480,7 @@ header{
 
 .ge-img{
     display: flex;
-    background-image: url(images/gener/party.jpg);
+    background-image: url(assets/gener/party.jpg);
     background-size: 100% 100%;
     background-position: center;
     width: 30%;
@@ -495,11 +495,11 @@ header{
 }
 
 #gener-img-2{
-    background-image: url(images/gener/electronic.jpg);
+    background-image: url(assets/gener/electronic.jpg);
 }
 
 #gener-img-3{
-    background-image: url(images/gener/road-trip.jpg);
+    background-image: url(assets/gener/road-trip.jpg);
 }
 
 .ge-img p{
@@ -563,7 +563,7 @@ footer{
 #footer-thumbnail-container{
     height: 4rem;
     width: 4rem;
-    background: url(images/queue/peaches.jpg) center no-repeat;
+    background: url(assets/queue/peaches.jpg) center no-repeat;
     background-size: contain;
     margin: 1vh;
 }

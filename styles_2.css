@@ -334,7 +334,7 @@ footer{
 #footer-thumbnail-container{
     height: 4rem;
     width: 4rem;
-    background: url(images/queue/peaches.jpg) center no-repeat;
+    background: url(assets/queue/peaches.jpg) center no-repeat;
     background-size: contain;
     margin: 1vh;
 }
